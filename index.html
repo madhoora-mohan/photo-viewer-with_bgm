@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Our memories</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>
+      These are the days I will remember
+      <!-- <div class="music" style="display: flex; position: relative"> -->
+      <!-- <button id="playpausebtn" onclick="initAudioPlayer()">
+        <img
+          class="sound"
+          src="https://img.icons8.com/ios-filled/30/ffd700/medium-volume--v1.png"
+        />
+      </button> -->
+      <!-- <button id="mutebtn">
+        <img
+          class="mutebtn"
+          src="https://img.icons8.com/ios/30/ffd700/high-volume--v2.png"
+        />
+      </button> -->
+      <!-- </div> -->
+      <button id="play" onclick="play_mus()">
+        <img src="https://img.icons8.com/ios/30/ffd700/no-audio--v1.png" />
+      </button>
+      <button id="mute" onclick="mute_mus()">
+        <img src="https://img.icons8.com/ios/30/ffd700/high-volume--v2.png" />
+      </button>
+    </h1>
+
+    <div class="nav" id="myNav">
+      <a href="#tk'22" onclick="display_pic('tk22')">tk'22</a>
+      <a href="#pongal'23" onclick="display_pic('pongal23')">pongal'23</a>
+      <a href="#20-06-23" onclick="display_pic('The_26')">26-01-23</a>
+    </div>
+    <div class="whole">
+      <div id="tk22" class="slideshow-container-tk" style="display: none">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 7</div>
+          <img class="img" src="./images/IMG_20220521_194124.jpg" />
+          <div class="text">Handshake</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 7</div>
+          <img class="img" src="./images/IMG_20220521_184951.jpg" />
+          <div class="text">Group</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 7</div>
+          <img class="img" src="./images/IMG_20220521_201235.jpg" />
+          <div class="text">3 idiots</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 7</div>
+          <img class="img" src="./images/tk22_gloworb.JPG" />
+          <div class="text">gloworb</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 7</div>
+          <img class="img" src="./images/tk22_4of5.jpg" />
+          <div class="text">tk22_4of5</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 7</div>
+          <img class="img" src="./images/tk22_light 7.JPG" />
+          <div class="text">tk22_light</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 7</div>
+          <img class="img" src="./images/tk22_oat.jpg" />
+          <div class="text">tk22_oat</div>
+        </div>
+
+        <a class="prev1" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next1" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+    <div class="whole">
+      <div
+        id="pongal23"
+        class="slideshow-container-pongal"
+        style="display: none"
+      >
+        <div class="urSlides fade">
+          <div class="numbertext">1 / 7</div>
+          <img class="img" src="./images/pavan narasiman.jpeg" />
+          <div class="text">narasiman</div>
+        </div>
+
+        <div class="urSlides fade">
+          <div class="numbertext">2 / 7</div>
+          <img class="img" src="./images/sweths n me.jpeg" />
+          <div class="text">sweths</div>
+        </div>
+
+        <div class="urSlides fade">
+          <div class="numbertext">3 / 7</div>
+          <img class="img" src="./images/boys group.jpeg" />
+          <div class="text">boys</div>
+        </div>
+
+        <div class="urSlides fade">
+          <div class="numbertext">4 / 7</div>
+          <img class="img" src="./images/15 - self eat.jpeg" />
+          <div class="text">self</div>
+        </div>
+
+        <div class="urSlides fade">
+          <div class="numbertext">5 / 7</div>
+          <img class="img" src="./images/15 - pose 4.jpeg" />
+          <div class="text">pose</div>
+        </div>
+
+        <div class="urSlides fade">
+          <div class="numbertext">6 / 7</div>
+          <img class="img" src="./images/15 - janani.jpeg" />
+          <div class="text">With janani</div>
+        </div>
+
+        <div class="urSlides fade">
+          <div class="numbertext">7 / 7</div>
+          <img class="img" src="./images/15 - yogan.jpeg" />
+          <div class="text">With yogan</div>
+        </div>
+
+        <a class="prev2" onclick="plusSlides_pongal(-1)">&#10094;</a>
+        <a class="next2" onclick="plusSlides_pongal(1)">&#10095;</a>
+      </div>
+    </div>
+    <div class="whole">
+      <div id="The_26" class="slideshow-container-26th" style="display: none">
+        <div class="ourSlides fade">
+          <div class="numbertext">1 / 7</div>
+          <img class="img" src="./images/self.jpeg" />
+          <div class="text">Self</div>
+        </div>
+
+        <div class="ourSlides fade">
+          <div class="numbertext">2 / 7</div>
+          <img class="img" src="./images/Group.jpeg" />
+          <div class="text">Group</div>
+        </div>
+
+        <div class="ourSlides fade">
+          <div class="numbertext">3 / 7</div>
+          <img class="img" src="./images/bed.jpeg" />
+          <div class="text">Bed</div>
+        </div>
+
+        <div class="ourSlides fade">
+          <div class="numbertext">4 / 7</div>
+          <img class="img" src="./images/26 - mirror.jpeg" />
+          <div class="text">mirror</div>
+        </div>
+
+        <div class="ourSlides fade">
+          <div class="numbertext">5 / 7</div>
+          <img class="img" src="./images/26 - couch.jpeg" />
+          <div class="text">couch</div>
+        </div>
+
+        <div class="ourSlides fade">
+          <div class="numbertext">6 / 7</div>
+          <img class="img" src="./images/26 - rose.jpeg" />
+          <div class="text">rose</div>
+        </div>
+
+        <div class="ourSlides fade">
+          <div class="numbertext">7 / 7</div>
+          <img class="img" src="./images/26 - stairs.jpeg" />
+          <div class="text">stairs</div>
+        </div>
+
+        <a class="prev3" onclick="plusSlides_26(-1)">&#10094;</a>
+        <a class="next3" onclick="plusSlides_26(1)">&#10095;</a>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

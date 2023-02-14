@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Maiandra GD", Regular;
+  box-sizing: border-box;
+}
+body {
+  background: blueviolet;
+}
+h1 {
+  text-align: center;
+  background: black;
+  color: gold;
+  width: 100%;
+  top: 0%;
+  position: fixed;
+}
+.whole {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+/* .mutebtn {
+  background: black;
+  cursor: pointer;
+  width: 35px;
+  height: 33px;
+  border-radius: 5px;
+  background: url("https://img.icons8.com/ios/30/ffd700/high-volume--v2.png")
+    no-repeat;
+} */
+#play {
+  background: black;
+  border-radius: 5px;
+}
+#mute {
+  display: none;
+  background: black;
+}
+
+#play:hover,
+#mute:hover {
+  background: gray;
+}
+.nav {
+  text-align: center;
+  overflow: hidden;
+  margin-top: 80px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.nav a {
+  width: 267px;
+  float: inline-end;
+  display: inline-flex;
+  justify-content: center;
+  background-color: black;
+  color: azure;
+  padding: 5px 2px;
+  text-decoration: none;
+  font-size: 18px;
+  border: solid 0.1px blueviolet;
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.nav a:hover {
+  background-color: silver;
+  color: black;
+}
+
+.slideshow-container-tk,
+.slideshow-container-pongal,
+.slideshow-container-26th {
+  width: 800px;
+  height: 500px;
+  position: fixed;
+  /* margin-top: 8%; */
+  margin: auto;
+  margin-bottom: 5%;
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 20.7%; */
+  border: solid 2px black;
+}
+.mySlides,
+.urSlides,
+.ourSlides {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: none;
+}
+.img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 1) !important;
+  /* margin-bottom: -5px; */
+}
+
+/* Hide the images by default */
+/* .mySlides,
+.urSlides,
+.ourSlides {
+  display: none;
+} */
+
+/* Next & previous buttons */
+.prev1,
+.next1,
+.prev2,
+.next2,
+.prev3,
+.next3 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  opacity: 0.7;
+  background-color: black;
+}
+.prev1,
+.prev2,
+.prev3 {
+  left: 0 !important;
+}
+/* Position the "next button" to the right */
+.next1,
+.next2,
+.next3 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev1:hover,
+.next1:hover,
+.prev2:hover,
+.next2:hover,
+.prev3:hover,
+.next3:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 14%;
+  width: 100%;
+  text-align: center;
+  opacity: 0.5;
+  background-color: black;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: fixed;
+  z-index: 1;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
